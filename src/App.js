@@ -8,10 +8,6 @@ function App() {
   const [roomName,setRoomName] = useState("")
   const[isJoin,setIsJoin] = useState(false)
 
-  const handleSubmit = ()=>{
-
-  }
-
   const joinRoom = ()=>{
     if(userName!=="" && roomName!==""){
       socket.emit("join_room",roomName)
